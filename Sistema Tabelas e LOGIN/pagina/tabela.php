@@ -1,167 +1,89 @@
-<?php include("cabecalho.php"); ?>
 
-<div class="container">
-    <div class="row">
-		
-        
-        <div class="col-md-12">
-        <h4>Bootstrap Snipp for Datatable</h4>
-        <div class="table-responsive">
+<?php include ("../cabecalho.php"); ?>
 
-                
-              <table id="mytable" class="table table-bordred table-striped">
-                   
-                   <thead>
-                   
-                   <th><input type="checkbox" id="checkall" /></th>
-                   <th>Sales ID</th>
-                    <th>Name</th>
-                     <th>Email</th>
-                     <th>Designation</th>
-                     <th>Mobile Numberl</th>
-                      
-                      
-                       <th>Delete</th>
-                   </thead>
-    <tbody>
-    
-    <tr>
-    <td><input type="checkbox" class="checkthis" /></td>
-    <td>Mohsin</td>
-    <td>Irshad</td>
-    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-    <td>isometric.mohsin@gmail.com</td>
-    <td>+923335586757</td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-    </tr>
-    
- <tr>
-    <td><input type="checkbox" class="checkthis" /></td>
-    <td>Mohsin</td>
-    <td>Irshad</td>
-    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-    <td>isometric.mohsin@gmail.com</td>
-    <td>+923335586757</td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-    </tr>
-    
-    
- <tr>
-    <td><input type="checkbox" class="checkthis" /></td>
-    <td>Mohsin</td>
-    <td>Irshad</td>
-    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-    <td>isometric.mohsin@gmail.com</td>
-    <td>+923335586757</td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-    </tr>
-    
-    
-    
- <tr>
-    <td><input type="checkbox" class="checkthis" /></td>
-    <td>Mohsin</td>
-    <td>Irshad</td>
-    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-    <td>isometric.mohsin@gmail.com</td>
-    <td>+923335586757</td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-    </tr>
-    
-    
- <tr>
-    <td><input type="checkbox" class="checkthis" /></td>
-    <td>Mohsin</td>
-    <td>Irshad</td>
-    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-    <td>isometric.mohsin@gmail.com</td>
-    <td>+923335586757</td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-    </tr>
-    
-   
-    
-   
-    
-    </tbody>
-        
-</table>
-
-<div class="clearfix"></div>
-<ul class="pagination pull-right">
-  <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
-  <li class="active"><a href="#">1</a></li>
-  <li><a href="#">2</a></li>
-  <li><a href="#">3</a></li>
-  <li><a href="#">4</a></li>
-  <li><a href="#">5</a></li>
-  <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
-</ul>
-                
+<div class="login-body">
+    <article class="container-login center-block">
+    <section>
+      <ul id="top-bar" class="nav nav-tabs nav-justified">
+        <li class="active"><a data-toggle="tab" href="#login-access">ENTRAR</a></li>
+        <li><a href="#cadastro" data-toggle="tab">CADASTRAR</a></li>
+      </ul>
+      <div class="tab-content tabs-login col-lg-12 col-md-12 col-sm-12 cols-xs-12">
+        <div id="login-access" class="tab-pane fade active in">
+          <h2><i class="glyphicon glyphicon-log-in"></i>  Minha Agenda</h2>
+          <br>          
+          <form method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal">
+            <div class="form-group ">
+              <label for="login" class="sr-only">Email</label>
+                <input type="text" class="form-control" name="login" id="login_value" 
+                  placeholder="Email" tabindex="1" value="" />
             </div>
-            
+            <div class="form-group ">
+              <label for="password" class="sr-only">Password</label>
+                <input type="password" class="form-control" name="password" id="password"
+                  placeholder="Password" value="" tabindex="2" />
+            </div>
+            <div class="checkbox">
+                <label class="control-label" for="remember_me">
+                  <input type="checkbox" name="remember_me" id="remember_me" value="1" class="" tabindex="3" /> Relembrar
+                </label>
+            </div>
+            <br/>
+            <div class="form-group ">       
+                <button type="submit" name="log-me-in" id="submit" tabindex="5" class="btn btn-lg btn-primary">Entra</button>
+            </div>
+          </form>     
         </div>
-	</div>
+
+        <div id="cadastro" class="tab-pane fade">
+          <h2><i class="glyphicon glyphicon-log-in"></i>  CADASTRO</h2>
+          <br>          
+          <form method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal">
+            <div class="form-group ">
+              <label for="name" class="sr-only">Nome</label>
+                <input type="text" class="form-control" name="name" id="login_value" 
+                  placeholder="Email" tabindex="1" value="" />
+            </div>
+            <div class="form-group ">
+              <label for="login" class="sr-only">Email</label>
+                <input type="email" class="form-control" name="login" id="login_value" 
+                  placeholder="Email" tabindex="1" value="" />
+            </div>
+            <div class="form-group ">
+              <label for="password" class="sr-only">Senha</label>
+                <input type="password" class="form-control" name="password" id="password"
+                  placeholder="Password" value="" tabindex="2" />
+            </div>
+            <br/>
+            <div class="form-group ">       
+                <button type="submit" name="log-me-in" id="submit" tabindex="5" class="btn btn-lg btn-primary">Cadastrar</button>
+            </div>
+          </form>     
+        </div>
+      </div>
+    </section>
+  </article>
 </div>
 
+<script type="text/javascript">
+// Select all tabs
+$('.nav-tabs a').click(function(){
+    $(this).tab('show');
+})
 
-<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-      <div class="modal-dialog">
-    <div class="modal-content">
-          <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-        <h4 class="modal-title custom_align" id="Heading">Edit Your Detail</h4>
-      </div>
-          <div class="modal-body">
-          <div class="form-group">
-        <input class="form-control " type="text" placeholder="Mohsin">
-        </div>
-        <div class="form-group">
-        
-        <input class="form-control " type="text" placeholder="Irshad">
-        </div>
-        <div class="form-group">
-        <textarea rows="2" class="form-control" placeholder="CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan"></textarea>
-    
-        
-        </div>
-      </div>
-          <div class="modal-footer ">
-        <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> Update</button>
-      </div>
-        </div>
-    <!-- /.modal-content --> 
-  </div>
-      <!-- /.modal-dialog --> 
-    </div>
-    
-    
-    
-    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-      <div class="modal-dialog">
-    <div class="modal-content">
-          <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-        <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
-      </div>
-          <div class="modal-body">
-       
-       <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Record?</div>
-       
-      </div>
-        <div class="modal-footer ">
-        <button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-ok-sign"></span> Yes</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
-      </div>
-        </div>
-    <!-- /.modal-content --> 
-  </div>
-      <!-- /.modal-dialog --> 
-    </div>
+// Select tab by name
+$('.nav-tabs a[href="#login-access"]').tab('show')
 
-<?php include("rodape.php"); ?>
+// Select first tab
+$('.nav-tabs a:first').tab('show') 
+
+// Select last tab
+$('.nav-tabs a:last').tab('show') 
+
+// Select fourth tab (zero-based)
+$('.nav-tabs li:eq(3) a').tab('show')
+
+</script>
+
+
+<?php include ("../rodape.php"); ?>
