@@ -1,6 +1,8 @@
 
 <?php include ("cabecalho.php"); ?>
 
+  <link rel="stylesheet" type="text/css" href="css/estiloGeral.css">
+
 <div class="login-body">
     <article class="container-login center-block">
 		<section>
