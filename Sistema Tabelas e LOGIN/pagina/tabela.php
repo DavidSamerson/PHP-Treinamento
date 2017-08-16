@@ -1,7 +1,6 @@
 
-<?php include ("../cabecalho.php"); ?>
 
-<link rel="stylesheet" type="text/css" href="../css/tabela.css">
+<link rel="stylesheet" type="text/css" href="css/tabela.css">
 
 <div class="span7">   
 <div class="widget stacked widget-table action-table">
@@ -9,6 +8,7 @@
         <div class="widget-header">
           <i class="icon-th-list"></i>
           <h3>Table</h3>
+          <br>
         </div> <!-- /widget-header -->
         
         <div class="widget-content">
@@ -36,76 +36,7 @@
                   </a>
                 </td>
               </tr>
-              <tr>
-                <td>Trident</td>
-                <td>Internet
-                   Explorer 5.0</td>
-                <td class="td-actions">
-                  <a href="javascript:;" class="btn btn-small btn-primary">
-                    <i class="btn-icon-only icon-ok"></i>                   
-                  </a>
-                  
-                  <a href="javascript:;" class="btn btn-small">
-                    <i class="btn-icon-only icon-remove"></i>                   
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>Trident</td>
-                <td>Internet
-                   Explorer 5.5</td>
-                <td class="td-actions">
-                  <a href="javascript:;" class="btn btn-small btn-primary">
-                    <i class="btn-icon-only icon-ok"></i>                   
-                  </a>
-                  
-                  <a href="javascript:;" class="btn btn-small">
-                    <i class="btn-icon-only icon-remove"></i>                   
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>Trident</td>
-                <td>Internet
-                   Explorer 5.5</td>
-                <td class="td-actions">
-                  <a href="javascript:;" class="btn btn-small btn-primary">
-                    <i class="btn-icon-only icon-ok"></i>                   
-                  </a>
-                  
-                  <a href="javascript:;" class="btn btn-small">
-                    <i class="btn-icon-only icon-remove"></i>                   
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>Trident</td>
-                <td>Internet
-                   Explorer 5.5</td>
-                <td class="td-actions">
-                  <a href="javascript:;" class="btn btn-small btn-primary">
-                    <i class="btn-icon-only icon-ok"></i>                   
-                  </a>
-                  
-                  <a href="javascript:;" class="btn btn-small">
-                    <i class="btn-icon-only icon-remove"></i>                   
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>Trident</td>
-                <td>Internet
-                   Explorer 5.5</td>
-                <td class="td-actions">
-                  <a href="javascript:;" class="btn btn-small btn-primary">
-                    <i class="btn-icon-only icon-ok"></i>                   
-                  </a>
-                  
-                  <a href="javascript:;" class="btn btn-small">
-                    <i class="btn-icon-only icon-remove"></i>                   
-                  </a>
-                </td>
-              </tr>
+              
               </tbody>
             </table>
           
@@ -113,6 +44,3 @@
       
       </div> <!-- /widget -->
             </div>
-
-
-<?php include ("../rodape.php"); ?>
