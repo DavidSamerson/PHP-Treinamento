@@ -1,0 +1,42 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+nav, footer, section {
+
+	width: 30%;
+	background-color: #007BFF;
+	padding: 10px;
+	margin: auto;
+	margin-top: 5px;
+}
+
+fieldset {
+	height: auto;
+}
+
+.campo {
+	width: 330px;
+	float: right;
+}
+
+table tr td {
+	width: 20%;
+}
+
+.nomes{
+	width: 20%;
+}
+
+.bntEditar{
+	width: 90px;
+}
+.bntExcluir{
+	width: 90px;
+}
+.bntCadastrar{
+	float: right;
+	width: 334px;
+	margin-top: 15px;
+}
