@@ -1,82 +1,60 @@
-<!DOCTYPE html>
-<?php 
-session_start();
-if (isset($_GET['nome']) && $_GET['nome'] != '') {
-		$tarefa = array();
 
-		$tarefa['nome'] = $_GET['nome'];
 
-	if (isset($_GET['descricao'])) {
-		$tarefa['descricao'] = $_GET['nome'];
-	} else {
-		$tarefa['descricao'] = "";
-	}
-
-	if (isset($_GET['prazo'])) {
-		$tarefa['prazo'] = $_GET['prazo'];
-	} else {
-		$tarefa['prazo'] = "";
-	}
-
-	$tarefa['prioridade'] = $_GET['prioridade'];
-
-	if (isset($_GET['concluida'])) {
-		$tarefa['concluida'] = $_GET['concluida'];
-	} else {
-		$tarefa['concluida'] = "";
-	}
-
-	$_SESSION['listaTarefas'][] = $tarefa;
- ?>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Gerenciador de tarefas</title>
-	<link rel="stylesheet" type="text/css" href="../css/tarefas2.css">
-</head>
-<body>
-	<form>
-		<fieldset>
-			<legend>Nova Tarefa</legend>
-			<br>
-			<div>
-			<label>
-				Tarefa:
-				<input type="text" name="nome" placeholder="Nome" id="nome" class="campo" maxlength="20">
-			</label>
-			</div>
-			<br>
-			<div>
-			<label>
-				Descrição (Opcional):
-				<textarea name="Descricao"></textarea>
-			</label>
-			</div>
-			<div>
-			<label>
-				Prazo (Opcional):
-				<input type="text" name="nome" placeholder="Nome" id="nome" class="campo" maxlength="20">
-			</label>
-			</div>
-			<fieldset>
-				<legend>Prioridade:</legend>
-				<label>
-					<input type="radio" name="prioridade" value="baixa" checked> Baixa
-					<input type="radio" name="prioridade" value="media"> Média
-					<input type="radio" name="prioridade" value="alta"> Alta
-				</label>
-			</fieldset>
-			<label>
-				Tarefa Concluida:
-				<input type="checkbox" name="concluida" value="sim">
-			</label>
-			<input type="submit" value="Cadastrar" class="bntCadastrar">
-			<br><br>
-		</fieldset>
-	</form>
-	</section>
-	<footer>
-		<?php include "tarefas.php"; ?>
-	</footer>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Gerenciador de Tarefas</title>
+        <link rel="stylesheet" href="tarefas.css" type="text/css" />
+    </head>
+    <body>
+        <h1>Gerenciador de Tarefas</h1>
+        <form>
+            <fieldset>
+                <legend>Nova tarefa</legend>
+                <label>
+                    Tarefa:
+                    <input type="text" name="nome" />
+                </label>
+                <label>
+                    Descrição (Opcional):
+                    <textarea name="descricao"></textarea>
+                </label>
+                <label>
+                    Prazo (Opcional):
+                    <input type="text" name="prazo" />
+                </label>
+                <fieldset>
+                    <legend>Prioridade:</legend>
+                    <label>
+                        <input type="radio" name="prioridade" value="1" checked /> Baixa
+                        <input type="radio" name="prioridade" value="2" /> Média
+                        <input type="radio" name="prioridade" value="3" /> Alta
+                    </label>
+                </fieldset>
+                <label>
+                    Tarefa concluída:
+                    <input type="checkbox" name="concluida" value="1" />
+                </label>
+                <input type="submit" value="Cadastrar" />
+            </fieldset>
+        </form>
+        <table>
+            <tr>
+                <th>Tarefa</th>
+                <th>Descricao</th>
+                <th>Prazo</th>
+                <th>Prioridade</th>
+                <th>Concluída</th>
+            </tr>
+            <?php foreach ($lista_tarefas as $tarefa) : ?>
+                <tr>
+                    <td><?php echo $tarefa['nome']; ?></td>
+                    <td><?php echo $tarefa['descricao']; ?></td>
+                    <td><?php echo traduz_data_para_exibir($tarefa['prazo']); ?></td>
+                    <td><?php echo traduz_prioridade($tarefa['prioridade']); ?></td>
+                    <td><?php echo $tarefa['concluida']; ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+    </body>
 </html>
