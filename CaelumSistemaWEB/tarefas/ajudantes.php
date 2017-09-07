@@ -48,4 +48,13 @@ function traduz_data_para_exibir($data){
 
 	return $data_exibir;
 }
+
+function traduz_concluida($data){
+
+	if ($data == 1) {
+		return "Sim";
+	} else {
+		return "Não";
+	}
+}
 ?>
