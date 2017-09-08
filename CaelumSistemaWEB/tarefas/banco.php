@@ -1,7 +1,7 @@
 <?php
 
 $bdServidor = '127.0.0.1';
-$bdUsuario = 'sistematarefas';
+$bdUsuario = 'sistematarefa';
 $bdSenha = 'sistema';
 $bdBanco = 'tarefas';
 
@@ -72,5 +72,3 @@ function remover_tarefa($conexao, $id)
 
     mysqli_query($conexao, $sqlRemover);
 }
-
-?>
