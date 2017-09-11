@@ -7,6 +7,10 @@ h1 {
     text-align: center;
 }
 
+.erro {
+    color: #F44;
+}
+
 fieldset {
     border: 3px double #333;
     color: #000;
