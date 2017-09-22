@@ -36,3 +36,5 @@
 
 		</fieldset>
 	</form>
+
+	<?php if ($exibir_tabela == false) : ?> <a href="tarefas.php">Cancelar</a> <?php endif ?>

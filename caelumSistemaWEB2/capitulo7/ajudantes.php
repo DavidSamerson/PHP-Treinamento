@@ -54,4 +54,5 @@ function traduz_concluida($concluida){
 	}
 }
 
+
 ?>
